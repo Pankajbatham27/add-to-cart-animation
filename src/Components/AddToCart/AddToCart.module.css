@@ -1,0 +1,21 @@
+.animate {
+    transition: transform 2s ease-in-out;
+    z-index: 9999;
+    position: relative;
+}
+
+
+
+.cartIcon.animate {
+    animation: scaleCartIcon 0.5s forwards;
+}
+
+@keyframes scaleCartIcon {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
