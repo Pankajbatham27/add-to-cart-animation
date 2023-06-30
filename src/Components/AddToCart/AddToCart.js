@@ -102,7 +102,7 @@ const AddToCart = () => {
 
                                 <button className='btn btn-dark' onClick={() => addingToCart(product.id)} >
 
-                                    <div style={{ transform: movePosition[product.id] || 'none' }} ref={(el) => (divRef.current[product.id] = el)}
+                                    <div style={{transform: movePosition[product.id] || 'none', zIndex: movePosition[product.id] && '9999' }} ref={(el) => (divRef.current[product.id] = el)}
                                         className={`${isAnimating ? style.animate : ''}`}>
                                         {loader[product.id] ? <FontAwesomeIcon className='text-info' icon={faCircle} /> : 'Add To Cart'}
                                     </div>

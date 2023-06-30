@@ -1,10 +1,13 @@
 .animate {
     transition: transform 2s ease-in-out;
-    z-index: 9999;
     position: relative;
 }
 
-
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
 
 .cartIcon.animate {
     animation: scaleCartIcon 0.5s forwards;
@@ -19,3 +22,4 @@
         transform: scale(1.5);
     }
 }
+
